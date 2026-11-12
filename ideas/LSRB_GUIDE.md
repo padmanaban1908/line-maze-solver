@@ -110,3 +110,4 @@ $$\theta_{\text{net}} = (\theta_{M1} + 180^\circ + \theta_{M2}) \pmod{360^\circ}
 ### Summary:
 - **Run 1 (Exploration)**: 7 movements (`L -> B -> S -> L -> B -> L -> S`).
 - **Run 2 (Speed Run)**: Exactly 3 movements (`R -> S -> S`). **Zero dead ends visited!**
+
