@@ -128,6 +128,14 @@ def sync_all(token, owner=DEFAULT_REPO_OWNER, repo=DEFAULT_REPO_NAME):
 
 
 if __name__ == "__main__":
+    # Load from .env if present
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(env_path):
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip().startswith("GITHUB_TOKEN="):
+                    os.environ["GITHUB_TOKEN"] = line.strip().split("=", 1)[1]
+
     token = os.getenv("GITHUB_TOKEN")
 
     if not token and len(sys.argv) > 1:
