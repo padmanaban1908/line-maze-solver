@@ -1,0 +1,28 @@
+# Build artifacts & temp files
+build/
+bin/
+*.hex
+*.elf
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.log
+
+# IDEs & Editor
+.vscode/
+.idea/
+.pio/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
