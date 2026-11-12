@@ -19,12 +19,13 @@ DEFAULT_REPO_NAME = "line-maze-solver"
 
 def get_files_to_sync(root_dir):
     ignored_patterns = {".git", "__pycache__", ".vscode", ".pio", ".venv", "venv", ".idea"}
+    ignored_files = {".env", ".token"}
     files = []
     for dirpath, dirnames, filenames in os.walk(root_dir):
         # Exclude ignored directories
         dirnames[:] = [d for d in dirnames if d not in ignored_patterns]
         for f in filenames:
-            if f.endswith((".pyc", ".log", ".tmp")):
+            if f in ignored_files or f.endswith((".pyc", ".log", ".tmp")):
                 continue
             full_path = os.path.join(dirpath, f)
             rel_path = os.path.relpath(full_path, root_dir).replace("\\", "/")
