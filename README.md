@@ -19,6 +19,7 @@ line-maze-solver/
 │   └── simulation/
 │       └── maze_simulator.py      # Python interactive visual maze simulator
 ├── ideas/                         # Design documents, algorithms, and roadmaps
+│   ├── LSRB_GUIDE.md              # Complete guide to LSRB algorithm & reduction matrix
 │   ├── PROJECT_IDEAS.md           # Master ideas log, dual-run strategy, and future goals
 │   ├── ALGORITHMS.md              # In-depth math for PID, LSRB reduction table, and Trémaux's
 │   └── HARDWARE_CIRCUIT.md        # Pinout tables, motor driver wiring, and power architecture
