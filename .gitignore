@@ -26,3 +26,7 @@ venv/
 Thumbs.db
 desktop.ini
 
+
+# Secrets & Environment variables
+.env
+*.token
